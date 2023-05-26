@@ -4,6 +4,8 @@ import UserList from "./features/users/UserList";
 import { Route, Routes } from "react-router-dom";
 import AddUser from "./features/users/AddUser";
 import EditUser from "./features/users/EditUser";
+import GetData from "./features/products/GetData";
+import DisplayProducts from "./features/products/DisplayProducts";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<UserList />}></Route>
         <Route path="/add-user" element={<AddUser />}></Route>
         <Route path="/edit-user/:id" element={<EditUser />}></Route>
+        <Route path="/data" element={<GetData />}></Route>
+        <Route path="/displayProduct" element={<DisplayProducts />} ></Route>
       </Routes>
     </div>
   );
